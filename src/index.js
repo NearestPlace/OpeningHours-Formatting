@@ -8,10 +8,10 @@ const cleanValue = (value = '') => {
   return compact(tokens.map(t => t.replace(remove, ' ')));
 };
 
-const parse = (value = '', options) => {
+const parse = (value = '', options = {}, nominatim = {}) => {
   let result;
   try {
-    const oh = new opening_hours(value, {}, options);
+    const oh = new opening_hours(value, nominatim, options);
     result = oh.prettifyValue({});
   } catch (err) {
     console.log(err);
@@ -20,13 +20,16 @@ const parse = (value = '', options) => {
   return result;
 };
 
-export default (value, options) => {
+/**
+ * Nominatim: https://wiki.openstreetmap.org/wiki/Nominatim#Reverse_Geocoding_.2F_Address_lookup
+ */
+export default (value, options = {}, nominatim = {}) => {
   const result = [];
   const cleanedValues = cleanValue(value);
   cleanedValues.forEach((val) => {
-    const parsed = parse(val, options);
+    const parsed = parse(val, options, nominatim);
     if (parsed) result.push(parsed);
   });
   return (!result.length) ? null :
-    parse(result.join(';'), options);
+    parse(result.join(';'), options, nominatim);
 };

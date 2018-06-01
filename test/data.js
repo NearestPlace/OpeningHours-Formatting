@@ -13,6 +13,7 @@ export default [
   'Mo-Mi\t09:00 – 18:30\nDo\t09:00 – 20:00\nFr\t09:00 – 18:30\nSa\t09:00 – 17:00',
   'Dienstag 9-18 h\nFreitag 9-19 h\nSamstag 9-12 h',
   '09:30–14:00, 15:00–18:00',
+  'Feiertags 10:00-15:00',
   'OPENING HOURS\nSunday	13:00 — 19:00\nMonday	CLOSED\nTuesday	11:00 — 19:00\nWednesday	13:00 — 19:00\nThursday	11:00 — 19:00\nFriday	11:00 — 19:00\nSaturday	11:00 — 19:00',
   'Lundi 13:00-19:00\nMardi à Vendredi 09:30-12:30\n13:30-19:00\nSamedi\n10:00-18:00',
   'Mo-Fr 09:00 – 13:00 & 14:00 – 18:00 Uhr\nSa 09:00 – 13:00 Uhr',
