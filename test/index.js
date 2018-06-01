@@ -9,7 +9,7 @@ describe('Check if locations are identical', () => {
   it('Check identical', (done) => {
     data.forEach((value) => {
       // console.log(value);
-      const val = formatOh(value, { locale: 'de', warnings: 7 });
+      const val = formatOh(value, { locale: 'de', warnings: 0 });
       console.log(value);
       console.log('Result', val);
       console.log();
