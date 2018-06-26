@@ -10,6 +10,7 @@ export default [
   'Montag bis Freitag von 9.30 bis 19.00 Uhr » Samstag von 9.30 bis 18.00 Uhr',
   'Mo.-Fr. 9.30 bis 18.00 Uhr / Sa. 09.30 bis 13.00 Uhr | So. geschlossen',
   'mo - fr: 11.00 - 19.00 h \n sa:        12.00 - 17.00 h',
+  'test 24/7',
   'Mo-Mi\t09:00 – 18:30\nDo\t09:00 – 20:00\nFr\t09:00 – 18:30\nSa\t09:00 – 17:00',
   'Dienstag 9-18 h\nFreitag 9-19 h\nSamstag 9-12 h',
   '09:30–14:00, 15:00–18:00',

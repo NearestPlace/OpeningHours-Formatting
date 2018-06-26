@@ -3,6 +3,7 @@ import compact from 'lodash.compact';
 
 const cleanValue = (value = '') => {
   const remove = /[&#,+()$~%'"*?<>{}»]/g;
+  if (value.includes('24/7')) return ['24/7'];
   const separators = ['\r\n', '\n', '\r', '<br>', '<br/>', '<br />', '/', '\\|'];
   const tokens = value.split(new RegExp(separators.join('|'), 'g'));
   return compact(tokens.map(t => t.replace(remove, ' ')));
