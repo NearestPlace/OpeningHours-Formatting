@@ -1,7 +1,8 @@
 {
   "name": "@nearest/nearest-openinghours-format",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Formating openinghours",
+  "homepage": "https://nearest.place",
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
