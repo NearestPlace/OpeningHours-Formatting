@@ -29,9 +29,6 @@ const parse = (value = '', options = {}, nominatim = {}) => {
 export default (value, options = {}, nominatim = {}) => {
   const result = [];
   const cleanedValues = cleanValue(value);
-
-  console.log({ cleanedValues });
-
   cleanedValues.forEach((val) => {
     const parsed = parse(val, options, nominatim);
     if (parsed) result.push(parsed);
