@@ -21,4 +21,5 @@ export default [
   'Mo, Mi, Do, Fr 10:00 - 21:00 Uhr\ngerne auch länger ;-)\nSamstag 09:00 - 14:00 Uhr\nDienstag, Sonntag und an Feiertagen geschlossen',
   'Juni - September	täglich 09:30 - 20:00 Uhr / Oktober - Mai 	täglich 09:30 - 18:00 Uhr / 24. Dezember  	geschlossen / 31. Dezember 	09:30 - 15:00 Uhr*',
   'Unser Ladengeschäft Decofloral in Friesenheim ist täglich , ausgenommen Mittwoch , von 10.00 Uhr- 12.30 Uhr und 15.00 Uhr- 18.00 Uhr geöffnet',
+  'Mo-Su 24hours',
 ];
