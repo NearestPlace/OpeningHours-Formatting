@@ -22,4 +22,5 @@ export default [
   'Juni - September	täglich 09:30 - 20:00 Uhr / Oktober - Mai 	täglich 09:30 - 18:00 Uhr / 24. Dezember  	geschlossen / 31. Dezember 	09:30 - 15:00 Uhr*',
   'Unser Ladengeschäft Decofloral in Friesenheim ist täglich , ausgenommen Mittwoch , von 10.00 Uhr- 12.30 Uhr und 15.00 Uhr- 18.00 Uhr geöffnet',
   'Mo-Su 24hours',
+  'Monday 24 hours; Tuesday 24hours; Wednesday 24hours; Thursday 24hours; Friday 24hours; Saturday 24hours; Sunday 24hours',
 ];
