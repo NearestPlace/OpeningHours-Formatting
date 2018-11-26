@@ -1,4 +1,6 @@
 export default [
+  'Montag bis Dienstag von 12.45 bis 15.33 Uhr und 16:00 bis 18.55',
+  'lunes - martes 12:45 a 18:33',
   'Sa           9.30 - 13.00 Uhr',
   'Montag bis Freitag 10.00 Uhr bis 18.00 Uhr\n\nSamstag 10.00 Uhr bis 16.00 Uhr',
   'Mi – Fr 10 – 13 Uhr\n15 – 18 Uhr\nSa 10 – 13 Uhr',
