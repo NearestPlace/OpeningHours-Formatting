@@ -5,6 +5,7 @@ const cleanValue = (value = '') => {
   if (typeof value === 'undefined') return [];
   let checkValue = value.toString();
   const remove = /[&#,+()$~%'"*?<>{}»]/g;
+  if (Number(checkValue) && Number(checkValue) > 2200) return [];
   if (checkValue.includes('24/7')) return ['24/7'];
   if (checkValue.includes('24hours')) checkValue = checkValue.replace(new RegExp('24hours', 'g'), '24 hours');
   const separators = ['\r\n', '\n', '\r', '<br>', '<br/>', '<br />', '/', '\\|', ';'];
