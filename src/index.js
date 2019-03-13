@@ -2,9 +2,10 @@ import OpeningHours from 'opening_hours';
 import compact from 'lodash.compact';
 
 const cleanValue = (value = '') => {
-  let checkValue = value;
+  if (typeof value === 'undefined') return [];
+  let checkValue = value.toString();
   const remove = /[&#,+()$~%'"*?<>{}»]/g;
-  if (value.includes('24/7')) return ['24/7'];
+  if (checkValue.includes('24/7')) return ['24/7'];
   if (checkValue.includes('24hours')) checkValue = checkValue.replace(new RegExp('24hours', 'g'), '24 hours');
   const separators = ['\r\n', '\n', '\r', '<br>', '<br/>', '<br />', '/', '\\|', ';'];
   const tokens = checkValue.split(new RegExp(separators.join('|'), 'g'));
