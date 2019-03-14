@@ -15,11 +15,12 @@ const cleanValue = (value = '') => {
 
 const parse = (value = '', options = {}, nominatim = {}) => {
   let result;
+  const { verbose } = options;
   try {
     const oh = new OpeningHours(value, nominatim, options);
     result = oh.prettifyValue({});
   } catch (err) {
-    console.log(err);
+    if (verbose) console.log({ err });
     result = null;
   }
   return result;

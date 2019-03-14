@@ -17,4 +17,12 @@ describe('Check if locations are identical', () => {
 
     done();
   });
+
+  it('Check wrong input', (done) => {
+    // console.log(value);
+    const val = formatOh('wfefqwefqwefqwe', { locale: 'de', warnings: 0, verbose: false }, { address: { country_code: 'de' } });
+    expect(val).to.be.null; // eslint-disable-line
+    done();
+  });
+
 });
