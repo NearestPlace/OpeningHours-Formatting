@@ -2,7 +2,7 @@ import OpeningHours from 'opening_hours';
 import compact from 'lodash.compact';
 
 const cleanValue = (value = '') => {
-  if (typeof value === 'undefined') return [];
+  if (typeof value === 'undefined' || value === null) return [];
   let checkValue = value.toString();
   const remove = /[&#,+()$~%'"*?<>{}»]/g;
   if (Number(checkValue) && Number(checkValue) > 2200) return [];
