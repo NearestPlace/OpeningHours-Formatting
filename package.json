@@ -1,6 +1,6 @@
 {
   "name": "@nearest/nearest-openinghours-format",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Formating openinghours",
   "homepage": "https://nearest.place",
   "main": "./dist/index.js",
