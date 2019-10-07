@@ -10,7 +10,7 @@ const cleanValue = (value = '') => {
   if (checkValue.includes('24hours')) checkValue = checkValue.replace(new RegExp('24hours', 'g'), '24 hours');
   const separators = ['\r\n', '\n', '\r', '<br>', '<br/>', '<br />', '/', '\\|', ';'];
   const tokens = checkValue.split(new RegExp(separators.join('|'), 'g'));
-  return compact(tokens.map(t => t.replace(remove, ' ')));
+  return compact(tokens.map(t => t.replace(remove, ' ').trim()));
 };
 
 const parse = (value = '', options = {}, nominatim = {}) => {
